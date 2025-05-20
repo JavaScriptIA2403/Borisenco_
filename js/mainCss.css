@@ -1,0 +1,108 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff7ee; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #fff7ee;
+}
+
+
+.left-pane,
+.right-pane {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.container::after {
+    content: "";
+    width: 1px;
+    background-color: #e2cfc3; 
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #8b5e3c; 
+}
+
+
+form label {
+    font-size: 16px;
+    color: #8b5e3c;
+}
+
+
+form input,
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #d4a373;
+    background-color: #fff0e0; 
+    box-shadow: 2px 2px 6px rgba(150, 100, 50, 0.2); 
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #d77a42; 
+    color: #fff;
+    border: 1px solid #a0522d;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 2px 2px 6px rgba(120, 70, 30, 0.3);
+}
+
+button:hover {
+    background-color: #c66b35;
+}
+
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff2e0;
+    border: 1px solid #e5b48a;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 2px 2px 6px rgba(150, 100, 50, 0.2);
+}
+
+.task-item h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #7b4b26;
+}
+
+.red-tasc {
+    color: rgb(201, 12, 12);
+}
+
+.normal-tasc {
+    color: rgb(30, 100, 30);
+}
